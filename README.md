@@ -21,7 +21,7 @@ Displays a responsive header with a logo and navigation links.
 
 Displays the landing page for the project.
 
-![LandPage Screenshot](./src/assets/LandPage.png)
+![LandPage Screenshot](./src/assets/Landpage.png)
 
 ---
 
@@ -50,7 +50,7 @@ Displays a grid of achievements.
 ### 6. **Advantage Component**
 
 Displays a grid of advantages.
-![Advantage Screenshot](./src/assets/Advantage.png)
+![Advantage Screenshot](./src/assets/Advantages.png)
 
 ---
 
