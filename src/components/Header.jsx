@@ -14,9 +14,12 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between px-4">
         <div className="flex items-center space-x-2">
           <img src={reactLogo} alt="rrgraph" className="w-8 h-8" />
-          <span className="text-sm font-medium text-gray-500">
-            #startwithpower
-          </span>
+          <div className="flex flex-col">
+            <span className="text-lg font-semibold text-gray-700">rrgraph</span>
+            <span className="text-sm font-medium text-gray-500">
+              #startwithpower
+            </span>
+          </div>
         </div>
 
         <nav className="hidden md:flex space-x-6">

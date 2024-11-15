@@ -17,7 +17,11 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full sm:w-1/2 md:w-1/4 mb-8">
-            <h2 className="text-2xl font-bold mb-4">rrgraph</h2>
+            <img
+              src="https://www.rrgraphdesign.com/wp-content/uploads/2022/06/RRGraph-Logo-Back-to-School.svg"
+              alt="rrgraph"
+              className="mb-4"
+            />
             <p className="text-gray-400 mb-4 pe-10">
               Reliable place to create PowerPoint slides.
             </p>

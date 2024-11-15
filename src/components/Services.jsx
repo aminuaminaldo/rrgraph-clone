@@ -50,7 +50,7 @@ const Services = () => {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-8 md:flex-row flex-col">
           <div className="text-left w-full md:w-1/2">
             <h2 className="text-4xl mb-2">
               We cover all aspects of your brand identity design
@@ -60,7 +60,7 @@ const Services = () => {
               them consistent in one brand.
             </p>
           </div>
-          <div>
+          <div className="w-full md:w-1/2 text-left md:text-right">
             <button className="bg-yellow-500 text-white font-semibold py-2 px-4 rounded-md shadow hover:bg-yellow-600 transition-colors">
               More examples
             </button>
@@ -71,15 +71,17 @@ const Services = () => {
           {serviceData.map((service, index) => (
             <div
               key={index}
-              className={`rounded-lg p-6 ${service.color} shadow-md hover:shadow-lg transition-shadow duration-300`}
+              className={`rounded-lg p-6 ${service.color} shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between`}
             >
-              <div className="flex flex-col items-center mb-4">
+              {/* Service Icon and Title */}
+              <div className="flex flex-col items-center mb-4 flex-grow">
                 <div className="mb-2">{service.icon}</div>
                 <h3 className="text-lg font-semibold text-gray-800">
                   {service.title}
                 </h3>
               </div>
 
+              {/* Button to Toggle Accordion */}
               <button
                 onClick={() => toggleAccordion(index)}
                 className="text-gray-700 text-sm flex items-center justify-center w-full mt-4 py-2 hover:text-yellow-500"
@@ -92,6 +94,7 @@ const Services = () => {
                 />
               </button>
 
+              {/* Accordion Content */}
               {openAccordions.includes(index) && (
                 <motion.div
                   initial={{ opacity: 0, height: 0 }}
@@ -103,7 +106,7 @@ const Services = () => {
                   <div className="space-y-2">
                     {service.details.map((detail, i) => (
                       <div key={i} className="flex items-center space-x-2">
-                        <FiCheck className="text-black w-4 h-4" />{" "}
+                        <FiCheck className="text-black w-4 h-4" />
                         <p>{detail}</p>
                       </div>
                     ))}
