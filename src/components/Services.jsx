@@ -51,11 +51,11 @@ const Services = () => {
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-8">
-          <div className="text-left">
-            <h2 className="text-4xl font-bold mb-2">
+          <div className="text-left w-full md:w-1/2">
+            <h2 className="text-4xl mb-2">
               We cover all aspects of your brand identity design
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-6">
               This is a one-stop design solution for all your brand design. Make
               them consistent in one brand.
             </p>

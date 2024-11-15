@@ -16,10 +16,9 @@ const Footer = () => {
     <footer className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
-          {/* Logo and Description */}
           <div className="w-full sm:w-1/2 md:w-1/4 mb-8">
             <h2 className="text-2xl font-bold mb-4">rrgraph</h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-4 pe-10">
               Reliable place to create PowerPoint slides.
             </p>
             <div className="flex space-x-4 text-gray-400">
@@ -31,10 +30,9 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company Links */}
           <div className="w-full sm:w-1/2 md:w-1/4 mb-8">
             <h3 className="text-lg font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="grid grid-cols-2 gap-2 text-gray-400">
               <li>
                 <a href="#" className="hover:text-white">
                   Service
@@ -83,7 +81,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Information */}
           <div className="w-full sm:w-1/2 md:w-1/4 mb-8">
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="flex items-center space-x-2 text-gray-400">
@@ -113,7 +110,6 @@ const Footer = () => {
             </button>
           </div>
 
-          {/* Guest Post */}
           <div className="w-full sm:w-1/2 md:w-1/4 mb-8">
             <h3 className="text-lg font-semibold mb-4">Guest post</h3>
             <p className="text-gray-400">
@@ -127,9 +123,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        {/* Copyright */}
-        <div className="border-t border-gray-700 pt-6 mt-6 text-center text-gray-400">
+        <div className="border-t border-gray-700 pt-6 mt-6 text-gray-400">
           <p>© 2023 by RRGraph Design. All rights reserved.</p>
         </div>
       </div>

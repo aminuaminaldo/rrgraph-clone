@@ -12,7 +12,6 @@ const Header = () => {
   return (
     <header className="bg-white shadow py-4">
       <div className="container mx-auto flex items-center justify-between px-4">
-        {/* Logo and tagline */}
         <div className="flex items-center space-x-2">
           <img src={reactLogo} alt="rrgraph" className="w-8 h-8" />
           <span className="text-sm font-medium text-gray-500">
@@ -20,7 +19,6 @@ const Header = () => {
           </span>
         </div>
 
-        {/* Desktop Navigation Links */}
         <nav className="hidden md:flex space-x-6">
           <a href="#" className="text-gray-700 hover:text-yellow-500">
             Service
@@ -39,7 +37,6 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Mobile Menu Toggle Button */}
         <div className="md:hidden">
           <button
             onClick={toggleMobileMenu}
@@ -49,7 +46,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Action Buttons (visible on both mobile and desktop) */}
         <div className="hidden md:flex space-x-4">
           <button className="border border-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-100">
             Book a demo
@@ -60,7 +56,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Links with Smooth Transition Below Header */}
       <nav
         className={`md:hidden transition-all duration-500 ease-in-out transform ${
           isMobileMenuOpen
@@ -85,7 +80,6 @@ const Header = () => {
             About
           </a>
 
-          {/* Mobile Action Buttons */}
           <button className="w-full border border-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-100 mt-4">
             Book a demo
           </button>

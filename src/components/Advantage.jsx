@@ -36,7 +36,7 @@ const advantagesData = [
 const Advantage = () => {
   return (
     <section className="py-12 bg-white">
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto px-4 text-left md:text-center">
         <h2 className="text-4xl mb-4 w-full md:w-1/2 mx-auto">
           Why choose our presentation design agency?
         </h2>

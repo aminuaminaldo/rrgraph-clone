@@ -9,8 +9,8 @@ const achievementsData = [
 
 const Achievements = () => {
   return (
-    <section className="py-12 bg-gray-50">
-      <div className="container mx-auto px-4 text-center">
+    <section className="pt-12 bg-gray-50">
+      <div className="container mx-auto px-4 text-left md:text-center">
         <h2 className="text-4xl mb-12 w-full md:w-1/2 mx-auto">
           We have spread satisfaction to whole the world
         </h2>
@@ -18,7 +18,7 @@ const Achievements = () => {
           {achievementsData.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center bg-black text-white p-8 rounded-lg shadow-md"
+              className="flex flex-col items-center justify-center bg-black text-white p-8 rounded-lg md:rounded-t-lg shadow-md"
             >
               <p className="text-3xl font-bold">{item.number}</p>
               <p className="mt-2 text-gray-400 text-sm">{item.label}</p>
