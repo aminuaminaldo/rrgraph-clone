@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../Partners.css";
 
 const Partners = () => {
@@ -53,19 +53,39 @@ const Partners = () => {
     },
   ];
 
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+
+    const logosClone = slider.innerHTML;
+    slider.innerHTML += logosClone;
+
+    let scrollPosition = 0;
+    const speed = 3;
+
+    const scrollLoop = () => {
+      scrollPosition += speed;
+      if (scrollPosition >= slider.scrollWidth / 2) {
+        scrollPosition = 0;
+      }
+      slider.scrollLeft = scrollPosition;
+      requestAnimationFrame(scrollLoop);
+    };
+    scrollLoop();
+  }, []);
+
   return (
-    <section className="partners-container bg-black px-8 py-4">
-      <div className="partners-slider mx-4 flex items-center overflow-hidden">
-        <div className="partners-logos flex items-center gap-8 whitespace-nowrap">
-          {logos.map((logo) => (
-            <img
-              key={logo.src}
-              className="partner-logo"
-              src={logo.src}
-              alt={logo.alt}
-            />
-          ))}
-        </div>
+    <section className="partners-container">
+      <div className="partners-slider" ref={sliderRef}>
+        {logos.map((logo, index) => (
+          <img
+            key={index}
+            className="partner-logo"
+            src={logo.src}
+            alt={logo.alt}
+          />
+        ))}
       </div>
     </section>
   );

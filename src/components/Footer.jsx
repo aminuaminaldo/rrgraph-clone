@@ -50,7 +50,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-white">
-                  Referral program
+                  Blog
                 </a>
               </li>
               <li>
@@ -75,7 +75,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-white">
-                  Blog
+                  Referral program
                 </a>
               </li>
             </ul>

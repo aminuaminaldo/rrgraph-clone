@@ -18,7 +18,7 @@ const Achievements = () => {
           {achievementsData.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center bg-black text-white p-8 rounded-lg md:rounded-t-lg shadow-md"
+              className="flex flex-col items-center justify-center bg-black text-white p-8 rounded-lg md:rounded-b-none shadow-md"
             >
               <p className="text-3xl font-bold">{item.number}</p>
               <p className="mt-2 text-gray-400 text-sm">{item.label}</p>
