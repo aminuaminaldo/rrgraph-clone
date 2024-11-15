@@ -9,37 +9,66 @@ Currently, two official plugins are available:
 
 ## Components Overview
 
-### 1. **Achievements Component**
+### 1. **Header Component**
 
-Displays key achievements in a responsive card layout.
+Displays a responsive header with a logo and navigation links.
 
-![Achievements Screenshot](./public/screenshots/achievements.png)
-
----
-
-### 2. **Services Component**
-
-Showcases various services with an accordion-like feature to reveal more details.
-
-![Services Screenshot](./public/screenshots/services.png)
+![Header Screenshot](./src/assets/Header.png)
 
 ---
 
-### 3. **Navbar with Logo**
+### 2. **LandPage Component**
 
-A responsive navigation bar with a logo and tag.
+Displays the landing page for the project.
 
-![Navbar Screenshot](./public/screenshots/navbar.png)
+![LandPage Screenshot](./src/assets/LandPage.png)
 
 ---
 
-## Project Walkthrough
+### 3. **Partners Component**
+
+Displays a grid of partner logos.
+
+![Partners Screenshot](./src/assets/Partners.png)
+
+---
+
+### 4. **Services Component**
+
+Displays a grid of services.
+![Services Screenshot](./src/assets/Services.png)
+
+---
+
+### 5. **Achievements Component**
+
+Displays a grid of achievements.
+![Achievements Screenshot](./src/assets/Achievements.png)
+
+---
+
+### 6. **Advantage Component**
+
+Displays a grid of advantages.
+![Advantage Screenshot](./src/assets/Advantage.png)
+
+---
+
+### 7. **Footer Component**
+
+Displays a responsive footer with copyright information.
+
+## ![Footer Screenshot](./src/assets/Footer.png)
+
+---
+
+<!-- ## Project Walkthrough
 
 [![Watch the walkthrough](./public/screenshots/video-thumbnail.png)](./public/walkthrough.mp4)
 
 Click the link to view the short video walkthrough showing all components in action.
 
----
+--- -->
 
 ### Running the Code
 
