@@ -1,0 +1,121 @@
+/* Desktop scrolling animation */
+@keyframes scroll-desktop {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile scrolling: One-by-one logo */
+@media (max-width: 768px) {
+  .partners-logos {
+    animation: scroll-mobile 15s linear infinite;
+  }
+}
+
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} /* Main container styling */ /* Main container styling */
+.partners-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Slider styling with Tailwind padding and margin */
+.partners-slider {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Flexbox for logos and animation */
+.partners-logos {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-desktop 10s linear infinite;
+}
+
+/* Individual logo styling */
+.partner-logo {
+  width: 80px;
+}
+
+/* Desktop scrolling animation */
+@keyframes scroll-desktop {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile scrolling: One-by-one logo */
+@media (max-width: 768px) {
+  .partners-logos {
+    animation: scroll-mobile 15s linear infinite;
+  }
+}
+
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.partners-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Slider styling with Tailwind padding and margin */
+.partners-slider {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Flexbox for logos and animation */
+.partners-logos {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-desktop 10s linear infinite;
+}
+
+/* Individual logo styling */
+.partner-logo {
+  width: 80px;
+}
+
+/* Desktop scrolling animation */
+@keyframes scroll-desktop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile scrolling: One-by-one logo */
+@media (max-width: 768px) {
+  .partners-logos {
+    animation: scroll-mobile 15s linear infinite;
+  }
+}
+
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

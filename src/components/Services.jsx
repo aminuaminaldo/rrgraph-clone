@@ -50,7 +50,6 @@ const Services = () => {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        {/* Header and Button Container */}
         <div className="flex justify-between items-center mb-8">
           <div className="text-left">
             <h2 className="text-4xl font-bold mb-2">
@@ -68,14 +67,12 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {serviceData.map((service, index) => (
             <div
               key={index}
               className={`rounded-lg p-6 ${service.color} shadow-md hover:shadow-lg transition-shadow duration-300`}
             >
-              {/* Icon and Title */}
               <div className="flex flex-col items-center mb-4">
                 <div className="mb-2">{service.icon}</div>
                 <h3 className="text-lg font-semibold text-gray-800">
@@ -83,7 +80,6 @@ const Services = () => {
                 </h3>
               </div>
 
-              {/* Accordion Toggle */}
               <button
                 onClick={() => toggleAccordion(index)}
                 className="text-gray-700 text-sm flex items-center justify-center w-full mt-4 py-2 hover:text-yellow-500"
@@ -96,7 +92,6 @@ const Services = () => {
                 />
               </button>
 
-              {/* Accordion Content with Framer Motion */}
               {openAccordions.includes(index) && (
                 <motion.div
                   initial={{ opacity: 0, height: 0 }}

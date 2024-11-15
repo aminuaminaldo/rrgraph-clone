@@ -1,4 +1,3 @@
-// src/components/Advantage.jsx
 import React from "react";
 
 const advantagesData = [
@@ -38,24 +37,19 @@ const Advantage = () => {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4 text-center">
-        {/* Main Header */}
-        <h2 className="text-4xl font-bold mb-4">
+        <h2 className="text-4xl mb-4 w-full md:w-1/2 mx-auto">
           Why choose our presentation design agency?
         </h2>
 
-        {/* Subheader */}
-        <p className="text-gray-500 mb-12">
+        <p className="text-gray-500 mb-12 w-full md:w-1/3 mx-auto">
           Your presentation handled by top rated designer, to get real
           impressive presentation design
         </p>
 
-        {/* Advantages Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {advantagesData.map((item, index) => (
             <div key={index} className="flex flex-col items-center text-center">
-              {/* Placeholder for icon */}
               <img src={item.icon} alt="Icon" className="w-16 h-16 mb-4" />{" "}
-              {/* Replace with actual icon URLs later */}
               <h3 className="text-lg font-semibold">{item.title}</h3>
               <p className="text-gray-500 mt-2">{item.description}</p>
             </div>
