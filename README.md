@@ -62,13 +62,13 @@ Displays a responsive footer with copyright information.
 
 ---
 
-<!-- ## Project Walkthrough
+## Project Walkthrough
 
-[![Watch the walkthrough](./public/screenshots/video-thumbnail.png)](./public/walkthrough.mp4)
+[![Watch the walkthrough](./src/assets/walkthrough.png)](./src/assets/rrdesign-scree-record.mov)
 
 Click the link to view the short video walkthrough showing all components in action.
 
---- -->
+---
 
 ### Running the Code
 
